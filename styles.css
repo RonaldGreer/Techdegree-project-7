@@ -48,7 +48,7 @@
 /*NAVIGATION BAR*/
 
 .navbar {
-    display: grade;
+    display: grid;
     background-color: #7575a3;
     margin-left: -10px;
     margin-right: -10px;
@@ -59,36 +59,42 @@
     max-width: auto;
 }
 
+
 .home {
     width: 40px;
     height: 40px;
     margin-left: 10px;
-    fill: whitesmoke;
 }
 
 .graph {
     width: 40px;
     height: 40px;
     margin-left: 10px;
-    fill: whitesmoke;
 }
 
 .people {
     width: 40px;
     height: 40px;
     margin-left: 10px;
-    fill: whitesmoke;
 }
 
 .settings {
     width: 40px;
     height: 40px;
     margin-left: 10px;
-    fill: whitesmoke;
 }
 
 .widgetwrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.main-header {
+
 }
