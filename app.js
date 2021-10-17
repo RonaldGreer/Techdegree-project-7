@@ -42,6 +42,8 @@ let trafficOptions = {
     }
 };
 
+const trafficCanvas = document.getElementById("traffic-chart");
+
 let trafficChart = new Chart(trafficCanvas, {
     type: 'line',
     data: trafficData,
