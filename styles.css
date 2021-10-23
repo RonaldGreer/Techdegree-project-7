@@ -115,13 +115,14 @@
 .alert-banner {
     background-color: hotpink;
     border-radius: 15%;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #pone {
     margin-left: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
+    font-size: 95%;
 }
 
 #ptwo {
@@ -172,11 +173,70 @@ li {
     width: 95vw;
 }
 
+
 .social-image {
     margin-left: 20px;
     margin-top: 20px;
     width: 75px;
     height: 85px;
+}
+
+.vic {
+    border-radius: 50%;
+    height: 90px;
+    width: 95px;
+
+}
+
+.members-container {
+    text-align: center;
+}
+
+.socialhr {
+    color: darkgray;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.form-field {
+    font-size: 12px;
+    width: 90%;
+    background-color: #dde0e0;
+    color: #000000;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5%;
+    border-color: gray;
+}
+
+.form-area {
+    font-size: 12px;
+    width: 90%;
+    background-color: #dde0e0;
+    color: #000000;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    padding-bottom: 80px;
+    border-radius: 5%;
+    border-color: gray;
+}
+
+#send {
+    background-color: hotpink;
+    color: #FFF;
+    font-size: 24px;
+    width: 100%;
+    border-radius: 5%;
+    text-align: center;
+    padding: 15px 40px 15px 40px;
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+button {
+    display: inline-block;
 }
 
 @media (min-width: 768px) {
