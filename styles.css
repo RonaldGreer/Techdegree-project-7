@@ -104,9 +104,79 @@
      "main";
 }
 
+/*.main-header {
+    /**/
+
+.alert-banner p {
+    text-align: center;
+    display: inline-block;
+}
+
+.alert-banner {
+    background-color: hotpink;
+    border-radius: 15%;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#pone {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#ptwo {
+    font-size: 17px;
+}
+
+.dalist {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#selected {
+    border: solid 1px;
+    border-radius: 40%;
+    border-color: #33FF93;
+    background-color: #33FF93;
+}
+
+hr {
+    color: darkgray;
+    /*height: 1px;*/
+    width: 100%;
+    margin-top: 10px;
+}
+
+.headline {
+    font-family: 'Mukta', sans-serif;
+}
+
+h2 {
+    font-family: 'Mukta', sans-serif;
+}
+
+h3 {
+    font-family: 'Mukta', sans-serif;
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
+li {
+    font-family: 'Mukta', sans-serif;
+}
 
 .widget-container-full, .widget-container-half {
     width: 95vw;
+}
+
+.social-image {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 75px;
+    height: 85px;
 }
 
 @media (min-width: 768px) {
