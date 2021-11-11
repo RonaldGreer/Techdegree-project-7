@@ -1,14 +1,15 @@
 /*HEADER*/
 /*mobile (320px), tablet (768px) and desktop (1024px)*/
-.grid1 {
+
+header {
     margin-left: -10px;
     margin-top: -10px;
     margin-right: -10px;
     max-width: auto;
-    display: grid;
-    /*grid-template-columns: 100px 200px;*/
+    /*display: grid;
+    grid-template-columns: 100px 200px;*/
     background-color:blueviolet;
-    grid-area: header;
+    /*grid-area: header;*/
 }
 
 .webhead {
@@ -16,6 +17,10 @@
     margin-left: 10px;
     color: whitesmoke;
     font-family: 'Mukta', sans-serif;
+}
+
+#timezone {
+    width: 295px;
 }
 
 .bell {
@@ -50,7 +55,7 @@
 /*NAVIGATION BAR*/
 
 .navbar {
-    display: grid;
+    /*display: grid;*/
     background-color: #7575a3;
     margin-left: -10px;
     margin-right: -10px;
@@ -59,8 +64,9 @@
     padding-right: 20px;
     padding-bottom: 7px;
     max-width: auto;
-    grid-area: navigation;
+
 }
+
 
 
 .home {
@@ -72,19 +78,19 @@
 .graph {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .people {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
-.settings {
+.cog {
+    margin-left: 5px;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
 }
 
 .widgetwrap {
@@ -93,19 +99,6 @@
     justify-content: space-between;
 }
 
-.grid2 {
-    display: grid;
-    grid-area: main;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-     "header" 
-     "navigation"
-     "main";
-}
-
-/*.main-header {
-    /**/
 
 .alert-banner p {
     text-align: center;
@@ -169,16 +162,99 @@ li {
     font-family: 'Mukta', sans-serif;
 }
 
+label {
+    width: 30%;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+#save {
+    background-color: hotpink;
+    color: #FFF;
+    font-size: 20px;
+    width: 145px;
+    border-radius: 5%;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    height: 70px;
+}
+
+#cancel {
+    background-color: hotpink;
+    color: #FFF;
+    font-size: 20px;
+    width: 145px;
+    border-radius: 5%;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    height: 70px;
+}
+
+
 .widget-container-full, .widget-container-half {
     width: 95vw;
 }
 
+.facebook {
+    display: flex;
+    background-color: lightgrey;
+    border-color: darkgray;
+    border-radius: 5%;
+    margin-bottom: 8px;
+}
 
-.social-image {
+.instagram {
+    display: flex;
+    background-color: lightgrey;
+    border-color: darkgray;
+    border-radius: 5%;
+    margin-bottom: 8px;
+}
+
+.twitter {
+    display: flex;
+    background-color: lightgrey;
+    border-color: darkgray;
+    border-radius: 5%;
+    margin-bottom: 18px;
+}
+
+.social-imagef {
     margin-left: 20px;
     margin-top: 20px;
     width: 75px;
     height: 85px;
+    fill: #9566FF;
+}
+
+.social-imagei {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 75px;
+    height: 85px;
+    fill: #9566FF;
+}
+
+.social-imaget {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 75px;
+    height: 85px;
+    fill: #9566FF;
+}
+
+.smname {
+    margin-left: 12px;
+    color: #9566FF;
+    font-size: 20px;
+}
+
+.snumber {
+    margin-left: 12px;
+    color: gray;
+    font-size: 300%;
+    margin-top: -40px;
+    margin-bottom: 0px;
 }
 
 .vic {
@@ -239,33 +315,18 @@ button {
     display: inline-block;
 }
 
+.gridx {
+    display: grid;
+}
+
 @media (min-width: 768px) {
-    .grid2 {
+    .gridx {
+        display: grid;
         grid-template-columns: 55px 1fr;
-        grid-template-columns: 50%;/*syntax check*/
-        grid-template-areas:
+        grid-template-areas: 
         "header header"
         "navigation main";
     }
 
-    .traffic, .social {
-        grid-column: 1 / span 2;
-    }
-
-    .daily, .members, .message {
-        grid-column: 1 / span 1;
-    }
-
-    .mobile, .activity, .settings {
-        grid-column: 2 / span 1;
-    }
-
-    .widget-container-full {
-        width: 90vw;
-    }
-
-    .widget-container-half {
-        width: 45vw;
-    }
 
 }
