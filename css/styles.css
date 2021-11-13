@@ -14,6 +14,7 @@ nav {
 }
 
 main {
+    display: grid;
     grid-area: main;
 }
 
@@ -70,7 +71,6 @@ body {
 /*NAVIGATION BAR*/
 
 .navbar {
-    /*display: grid;*/
     background-color: #7575a3;
     margin-left: -10px;
     margin-right: -10px;
@@ -148,13 +148,6 @@ body {
     border-radius: 40%;
     border-color: #33FF93;
     background-color: #33FF93;
-}
-
-hr {
-    color: darkgray;
-    /*height: 1px;*/
-    width: 100%;
-    margin-top: 10px;
 }
 
 .headline {
@@ -283,12 +276,6 @@ label {
     text-align: center;
 }
 
-.socialhr {
-    color: darkgray;
-    width: 75%;
-    margin-top: 10px;
-}
-
 .form-field {
     font-size: 12px;
     width: 90%;
@@ -330,8 +317,18 @@ button {
     display: inline-block;
 }
 
+hr {
+    color: darkgray;
+    /*height: 1px;*/
+    width: 100%;
+    margin-top: 10px;
+}
 
-@media (min-width: 768px) {
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 1024px) {
     body {
       grid-template-columns: 55px 1fr;
       grid-template-areas: 
@@ -340,10 +337,11 @@ button {
     }
 
     main {
+        display: grid;
         grid-template-columns: 50%;
     }
 
-    .traffic, .networking {
+    .traffic, .networking, .alert, .hr {
         grid-column: 1 / span 2;
     }
 
@@ -361,5 +359,59 @@ button {
 
     .widget-container-half {
         width: 45vw;
+    }
+
+    .bell {
+        float: right;
+        margin: auto;
+        margin-left: 765px;
+        width: 35px;
+        height: 45px;
+        fill: whitesmoke;
+    }
+
+    .user {
+        float: right;
+        margin: auto;
+        margin-right: -3px;
+    }
+
+    .username {
+        float: right;
+        margin-right: 15px;
+    }
+
+    .widgetwrap {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+    }
+
+    .home {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+    
+    .graph {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+    
+    .people {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+    
+    .cog {
+        margin-top: 20px;
+        margin-left: -1px;
+        width: 40px;
+        height: 40px;
     }
 }
