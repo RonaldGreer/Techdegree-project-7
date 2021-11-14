@@ -414,4 +414,48 @@ hr {
         width: 40px;
         height: 40px;
     }
+
+    .headline {
+        margin-left: 25px;
+    }
+
+    .alert-banner {
+        margin-left: 35px;
+    }
+
+    #ptwo {
+        float: right;
+        margin-right: 25px;
+    }
+
+    .traffic {
+        margin-left: 20px;
+    }
+
+    .hr {
+        margin-left: 20px;
+    }
+
+    .daily {
+        margin-left: 20px;
+    }
+
+    .mobile {
+        margin-left: 20px;
+        border-left: solid 2px lightgrey;
+    }
+
+    .mobilehead {
+        margin-left: 8px;
+    }
+
+    .networking {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*.scell {
+        display: inline-block
+    }*/
 }
