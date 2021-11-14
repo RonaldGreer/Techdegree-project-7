@@ -364,21 +364,24 @@ hr {
     .bell {
         float: right;
         margin: auto;
-        margin-left: 485px;
+        margin-left: 425px;
         width: 35px;
         height: 45px;
         fill: whitesmoke;
     }
 
+    .fence {
+        display:inline-flex;
+    }
+
     .user {
-        float: right;
-        margin: auto;
-        margin-right: -5px;
+        /*float: right;
+        margin: auto;*/
+        margin-right: 10px;
     }
 
     .username {
-        float: right;
-        margin-right: 55px;
+        margin: auto;
     }
 
     .widgetwrap {
@@ -421,16 +424,16 @@ hr {
 
     .alert-banner {
         margin-left: 25px;
-        width: 85%;
+        width: 45%;
     }
 
     #ptwo {
         float: right;
-        margin-right: 65px;
+        margin-right: 25px;
     }
 
     .traffic {
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .hr {
@@ -439,6 +442,7 @@ hr {
 
     .daily {
         margin-left: 20px;
+        size: auto;
     }
 
     .mobile {
@@ -469,6 +473,11 @@ hr {
     .members-container {
         display: flex;
         margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .memhr {
+        width: 130%;
     }
 
     .vic {
@@ -477,14 +486,59 @@ hr {
         width: 85px;
     }
 
+    .members-text {
+        margin-left: 45px;
+    }
+
+    .joined {
+        margin-left: 260px;
+    }
+
+    #dalej {
+        margin-left: 312px;
+    }
+
+    #dawnj {
+        margin-left: 302px;
+    }
+
+    #danj {
+        margin-left: 312px;
+    }
+
+    .activity {
+        margin-left: 20px;
+    }
+
+    .dans {
+        display: none;
+    }
+
     .message {
         margin-left: 20px;
         border-top: solid 2px lightgrey;
     }
 
+    #userField {
+        width: 120%;
+    }
+
+    #messageField {
+        width: 120%;
+    }
+
+    #send {
+        width: 125%;
+        margin-bottom: 20px;
+    }
+
     .settings {
         margin-left: 20px;
         border-top: solid 2px lightgrey;
+    }
+
+    #timezone {
+        width: 120%;
     }
 
     #save {
@@ -620,6 +674,10 @@ hr {
 
     .traffic {
         margin-left: 20px;
+    }
+
+    .memhr {
+        display: none;
     }
 
     .hr {
