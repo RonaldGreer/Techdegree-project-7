@@ -185,6 +185,7 @@ label {
     text-align: center;
     padding: 15px 30px 15px 30px;
     height: 70px;
+    margin-bottom: 8px;
 }
 
 #cancel {
@@ -196,6 +197,7 @@ label {
     text-align: center;
     padding: 15px 30px 15px 30px;
     height: 70px;
+    margin-bottom: 8px;
 }
 
 
@@ -310,7 +312,7 @@ label {
     text-align: center;
     padding: 15px 40px 15px 40px;
     height: 70px;
-    margin-bottom: 25px;
+    margin-top: 35px;
 }
 
 button {
@@ -325,7 +327,195 @@ hr {
 }
 
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas: 
+          "header header"
+          "navigation main";
+    }
+  
+    main {
+          display: grid;
+          grid-template-columns: 50%;
+    }
+
+    .traffic, .networking, .alert, .hr {
+        grid-column: 1 / span 2;
+    }
+
+    .daily, .members, .message, .activity, .settings {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile {
+        grid-column: 2 / span 1;
+    }
+
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
+
+
+    .bell {
+        float: right;
+        margin: auto;
+        margin-left: 485px;
+        width: 35px;
+        height: 45px;
+        fill: whitesmoke;
+    }
+
+    .user {
+        float: right;
+        margin: auto;
+        margin-right: -5px;
+    }
+
+    .username {
+        float: right;
+        margin-right: 55px;
+    }
+
+    .widgetwrap {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+    }
+
+    .home {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+    
+    .graph {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+    
+    .people {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+    
+    .cog {
+        margin-top: 20px;
+        margin-left: -1px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .headline {
+        margin-left: 25px;
+    }
+
+    .alert-banner {
+        margin-left: 25px;
+        width: 85%;
+    }
+
+    #ptwo {
+        float: right;
+        margin-right: 65px;
+    }
+
+    .traffic {
+        margin-left: 20px;
+    }
+
+    .hr {
+        margin-left: 20px;
+    }
+
+    .daily {
+        margin-left: 20px;
+    }
+
+    .mobile {
+        margin-left: 20px;
+        border-left: solid 2px lightgrey;
+    }
+
+    .mobilehead {
+        margin-left: 8px;
+    }
+
+    .networking {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*.scell {
+        display: inline-block
+    }*/
+
+    .members {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .members-container {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .vic {
+        border-radius: 50%;
+        height: 80px;
+        width: 85px;
+    }
+
+    .message {
+        margin-left: 20px;
+        border-top: solid 2px lightgrey;
+    }
+
+    .settings {
+        margin-left: 20px;
+        border-top: solid 2px lightgrey;
+    }
+
+    #save {
+        background-color: hotpink;
+        color: #FFF;
+        font-size: 20px;
+        width: 45%;
+        border-radius: 5%;
+        text-align: center;
+        padding: 15px 30px 15px 30px;
+        height: 70px;
+        margin-bottom: 8px;
+    }
+    
+    #cancel {
+        background-color: hotpink;
+        color: #FFF;
+        font-size: 20px;
+        width: 45%;
+        border-radius: 5%;
+        text-align: center;
+        padding: 15px 30px 15px 30px;
+        height: 70px;
+        margin-bottom: 8px;
+    }    
+
+}
+
+
+
+
 
 
 @media (min-width: 1024px) {
@@ -458,4 +648,55 @@ hr {
     /*.scell {
         display: inline-block
     }*/
-}
+
+    .members {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .members-container {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .vic {
+        border-radius: 50%;
+        height: 80px;
+        width: 85px;
+    }
+
+    .message {
+        margin-left: 20px;
+        border-top: solid 2px lightgrey;
+    }
+
+    .settings {
+        margin-left: 20px;
+        border-top: solid 2px lightgrey;
+    }
+
+    #save {
+        background-color: hotpink;
+        color: #FFF;
+        font-size: 20px;
+        width: 45%;
+        border-radius: 5%;
+        text-align: center;
+        padding: 15px 30px 15px 30px;
+        height: 70px;
+        margin-bottom: 8px;
+    }
+    
+    #cancel {
+        background-color: hotpink;
+        color: #FFF;
+        font-size: 20px;
+        width: 45%;
+        border-radius: 5%;
+        text-align: center;
+        padding: 15px 30px 15px 30px;
+        height: 70px;
+        margin-bottom: 8px;
+    }
+} 
