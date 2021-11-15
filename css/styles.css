@@ -47,6 +47,11 @@ body {
     fill: whitesmoke;
 }
 
+.bell:hover {
+    transition: 1s;
+    fill:#33FF93;
+}
+
 .fence {
     display: flex;
     flex-direction: row;
@@ -122,7 +127,7 @@ body {
 
 .alert-banner {
     background-color: hotpink;
-    border-radius: 15%;
+    border-radius: 20px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -290,6 +295,8 @@ label {
     border-color: gray;
 }
 
+
+
 .form-area {
     font-size: 12px;
     width: 90%;
@@ -364,7 +371,7 @@ hr {
     .bell {
         float: right;
         margin: auto;
-        margin-left: 425px;
+        margin-left: 825px;
         width: 35px;
         height: 45px;
         fill: whitesmoke;
@@ -424,7 +431,7 @@ hr {
 
     .alert-banner {
         margin-left: 25px;
-        width: 45%;
+        width: 95%;
     }
 
     #ptwo {
@@ -434,6 +441,7 @@ hr {
 
     .traffic {
         margin-left: 15px;
+        width: 240%;
     }
 
     .hr {
@@ -458,11 +466,11 @@ hr {
         margin-left: 20px;
         display: flex;
         flex-direction: row;
+        /*justify-content: space-between;*/
     }
 
-    /*.scell {
-        display: inline-block
-    }*/
+    /*.scell {}*/
+
 
     .members {
         margin-left: 20px;
@@ -477,7 +485,7 @@ hr {
     }
 
     .memhr {
-        width: 130%;
+        width: 200%;
     }
 
     .vic {
@@ -489,12 +497,14 @@ hr {
     .members-text {
         margin-left: 45px;
     }
+    
 
     .joined {
         margin-left: 260px;
     }
 
     #dalej {
+        float: right;
         margin-left: 312px;
     }
 
@@ -510,35 +520,38 @@ hr {
         margin-left: 20px;
     }
 
-    .dans {
+   /* .dans {
         display: none;
-    }
+    }*/
 
     .message {
         margin-left: 20px;
-        border-top: solid 2px lightgrey;
     }
 
     #userField {
-        width: 120%;
+        width: 180%;
     }
 
     #messageField {
-        width: 120%;
+        width: 180%;
     }
 
     #send {
-        width: 125%;
+        width: 185%;
         margin-bottom: 20px;
     }
 
     .settings {
         margin-left: 20px;
+    }
+
+    .settinghead {
         border-top: solid 2px lightgrey;
+        width: 180%;
     }
 
     #timezone {
-        width: 120%;
+        width: 180%;
     }
 
     #save {
